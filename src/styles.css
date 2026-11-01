@@ -7,16 +7,3 @@ html{scroll-behavior:smooth;scroll-padding-top:6rem}body{margin:0;min-width:320p
 .dot-pattern{background-image:radial-gradient(rgba(221,123,25,.35) 1.3px,transparent 1.3px);background-size:18px 18px}
 .reveal{animation:rise-in .7s ease both}@keyframes rise-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
-/* Subtle 3D depth tied to the user's scroll position */
-.scroll-depth-scene{perspective:1100px;transform-style:preserve-3d}
-.scroll-depth-image{transform:perspective(1100px) rotateY(-3deg) rotateX(1deg);transform-origin:center;transform-style:preserve-3d;transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .65s}
-.scroll-depth-card{transform:perspective(900px) rotateY(2deg) rotateX(-1deg) translateZ(18px);transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.7,.2,1),box-shadow .55s}
-.scroll-depth-card:hover{transform:perspective(900px) rotateY(0) rotateX(0) translateY(-7px) translateZ(28px);box-shadow:0 24px 55px rgba(32,6,73,.14)}
-@supports (animation-timeline:view()){
- .scroll-depth-image{animation:scroll-image-depth linear both;animation-timeline:view();animation-range:entry 0% cover 42%}
- .scroll-depth-card{animation:scroll-card-depth linear both;animation-timeline:view();animation-range:entry 0% cover 38%}
-}
-@keyframes scroll-image-depth{from{opacity:.55;transform:perspective(1100px) rotateY(-11deg) rotateX(5deg) translateY(42px) scale(.94)}to{opacity:1;transform:perspective(1100px) rotateY(-3deg) rotateX(1deg) translateY(0) scale(1)}}
-@keyframes scroll-card-depth{from{opacity:.5;transform:perspective(900px) rotateY(12deg) rotateX(-6deg) translateY(52px) translateZ(-35px) scale(.94)}to{opacity:1;transform:perspective(900px) rotateY(2deg) rotateX(-1deg) translateY(0) translateZ(18px) scale(1)}}
-@media(hover:none){.scroll-depth-card:hover{transform:perspective(900px) rotateY(2deg) rotateX(-1deg) translateZ(18px)}}
-@media(prefers-reduced-motion:reduce){.scroll-depth-image,.scroll-depth-card{animation:none!important;transform:none!important;transition:none!important}}
