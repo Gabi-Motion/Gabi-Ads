@@ -10,7 +10,7 @@ const services=[
 {tab:"Conversion Tracking",title:"GA4 & GTM Conversion Tracking",image:"https://c--b793c115-0fe7-40f3-b552-e7c042b890ac-prod.lovable.cloud/__l5e/assets-v1/4271209e-c963-4b4f-bee3-fc8188f225d3/work-1.jpg",desc:"Set up and verify meaningful conversion measurement so businesses can better understand the actions their advertisements generate.",items:["GA4 event setup","Google Tag Manager implementation","Lead and purchase conversion configuration","Tracking diagnostics","Testing and verification"]},
 {tab:"PPC Audits & Optimization",title:"Google Ads Audit & Optimization",image:"https://c--b793c115-0fe7-40f3-b552-e7c042b890ac-prod.lovable.cloud/__l5e/assets-v1/b4125b38-fd7d-4096-a00a-de0a1c7e2101/work-5.jpg",desc:"Review campaign structure, search terms, ad relevance, and conversion settings to identify opportunities for improvement.",items:["Account audit","Search term analysis","Budget and bidding review","Negative keyword review","Optimization roadmap"]}
 ];
-const projectImages={
+const projectImages:Record<string,string>={
 "cleaning-business-lead-generation":"https://c--b793c115-0fe7-40f3-b552-e7c042b890ac-prod.lovable.cloud/__l5e/assets-v1/57d19ef6-3f5f-438d-81c8-e5458ba0aa6c/work-3.jpg",
 "ecommerce-shopping-campaign-plan":"https://c--b793c115-0fe7-40f3-b552-e7c042b890ac-prod.lovable.cloud/__l5e/assets-v1/d54b3b8e-7130-42a8-8519-d4d867263ece/work-6.jpg",
 "local-plumbing-google-ads":"https://c--b793c115-0fe7-40f3-b552-e7c042b890ac-prod.lovable.cloud/__l5e/assets-v1/b56b25f6-8e09-4562-9bbd-20312496eedc/work-4.jpg",
