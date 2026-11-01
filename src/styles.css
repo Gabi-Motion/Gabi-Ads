@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@theme { --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif; --color-primary:#200649; --color-highlight:#dd7b19; --color-background:#fff; --color-foreground:#211532; }
+:root{font-family:"Plus Jakarta Sans",ui-sans-serif,system-ui,sans-serif;color:#211532;background:#fff;font-synthesis:none;text-rendering:optimizeLegibility}
+html{scroll-behavior:smooth;scroll-padding-top:6rem}body{margin:0;min-width:320px}*{box-sizing:border-box}::selection{background:#dd7b19;color:#200649}:focus-visible{outline:3px solid #dd7b19;outline-offset:3px}
+.eyebrow{color:#dd7b19;font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.dot-pattern{background-image:radial-gradient(rgba(221,123,25,.35) 1.3px,transparent 1.3px);background-size:18px 18px}
+.reveal{animation:rise-in .7s ease both}@keyframes rise-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
