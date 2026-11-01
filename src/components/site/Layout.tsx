@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import { Facebook, Instagram, Linkedin, Mail, Menu, MessageCircle, X } from "lucide-react";
 import { site } from "@/lib/site-config";
-const nav=[{label:"Home",hash:"home"},{label:"About",hash:"about"},{label:"Services",hash:"services"},{label:"Portfolio",hash:"portfolio"},{label:"Testimonials",hash:"testimonials"},{label:"FAQ",hash:"faq"},{label:"Process",hash:"process"},{label:"Contact",hash:"contact"}];
+const nav=[{label:"Home",hash:"home"},{label:"About",hash:"about"},{label:"Case Study",hash:"case-study"},{label:"Services",hash:"services"},{label:"Portfolio",hash:"portfolio"},{label:"Testimonials",hash:"testimonials"},{label:"FAQ",hash:"faq"},{label:"Process",hash:"process"},{label:"Contact",hash:"contact"}];
 export const waLink="https://wa.me/"+site.whatsapp+"?text="+encodeURIComponent("Hello, I would like to discuss a Google Ads project.");
 export function Reveal({children,className=""}:{children:ReactNode;className?:string}){return <div className={"reveal "+className}>{children}</div>;}
 export function Header(){
