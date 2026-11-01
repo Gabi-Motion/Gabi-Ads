@@ -1,6 +1,6 @@
 import { createFileRoute,Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowRight,BarChart3,CheckCircle2,LineChart,Search,Target,Settings2,MousePointerClick,ChevronDown,Check } from "lucide-react";
+import { ArrowRight,CheckCircle2,ChevronDown,Check } from "lucide-react";
 import { Shell } from "@/components/site/Layout";
 import { projects,site } from "@/lib/site-config";
 export const Route=createFileRoute("/")({component:Home});
